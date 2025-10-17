@@ -20,12 +20,21 @@
 }
 
 a {
-  font-weight: 500;
   color: white;
   text-decoration: inherit;
 }
 a:hover {
   color: white;
+}
+
+
+
+.carousel-item > div,
+.carousel-caption {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
@@ -36,9 +45,18 @@ body {
   min-height: 100vh; */
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+
+
+.carousel-indicators {
+  bottom: 20px !important;
+}
+.carousel-inner {
+  padding-bottom: 50px;
+}
+
+
+.carousel-indicators [data-bs-target] {
+  background-color: black !important;
 }
 
 button {
@@ -53,20 +71,26 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: white;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+footer nav a {
+  color: black;
+}
+footer nav a:hover {
+  color: black;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #f5ece3;
   }
   a:hover {
-    color: #747bff;
+    color: white;
   }
   button {
     background-color: #f9f9f9;
